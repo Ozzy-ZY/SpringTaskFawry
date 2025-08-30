@@ -1,9 +1,9 @@
 package org.product.springtaskfawry.repository;
 
 import org.product.springtaskfawry.model.Employee;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
-
 public interface EmployeeRepo {
     public boolean saveEmployee(Employee employee);
     public boolean updateEmployee(Employee employee);

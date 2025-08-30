@@ -5,7 +5,15 @@ public class Employee {
     private String email;
     private String phone;
     private String department;
-
+    public Employee(String name, String email, String phone, String department){
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.department = department;
+    }
+    public Employee(){
+        
+    }
     public String getName() {
         return name;
     }

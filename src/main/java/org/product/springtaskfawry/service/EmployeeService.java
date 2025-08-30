@@ -2,6 +2,7 @@ package org.product.springtaskfawry.service;
 
 import org.product.springtaskfawry.model.Employee;
 import org.product.springtaskfawry.repository.EmployeeRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -9,6 +10,7 @@ import java.util.Collection;
 @Service
 public class EmployeeService {
     private final EmployeeRepo employeeRepo;
+    @Autowired
     public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
     }
