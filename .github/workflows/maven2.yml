@@ -58,4 +58,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: publish with maven
-      run: mvn -B publish --file pom.xml
+      run: mvn -B spring-boot:run
