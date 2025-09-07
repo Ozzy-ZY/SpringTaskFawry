@@ -59,3 +59,8 @@ jobs:
         cache: maven
     - name: publish with maven
       run: mvn -B spring-boot:run
+    - name: Upload JAR artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: my-application-jar
+        path: target/*.jar
