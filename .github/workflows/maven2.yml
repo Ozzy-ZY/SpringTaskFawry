@@ -60,8 +60,10 @@ jobs:
     - name: publish with maven
       run: mvn -B spring-boot:run
       
-    - name: Upload JAR artifact
-    - uses: actions/upload-artifact@v4
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.6.2
       with:
-        name: my-artifact
-        path: path/**/[abc]rtifac?/*
+        path: src/artifact
+    # The desired behavior if no files are found using the provided path.
+
+          
