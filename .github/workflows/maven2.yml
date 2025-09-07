@@ -58,12 +58,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: publish with maven
-      run: mvn -B spring-boot:run
+      run: mvn -B package --file pom.xml
       
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.6.2
       with:
-        path: target/*.jar
+        name: hanz
+        path: target/SpringTaskFawry-0.0.1-SNAPSHOT.jar
     # The desired behavior if no files are found using the provided path.
 
           
