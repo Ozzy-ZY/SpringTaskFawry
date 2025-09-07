@@ -31,7 +31,7 @@ jobs:
       run: mvn -B package --file pom.xml
   test:
 
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     needs: build
 
     steps:
@@ -46,7 +46,7 @@ jobs:
       run: mvn -B test --file pom.xml
       
   deploy:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     needs: test
 
     steps:
