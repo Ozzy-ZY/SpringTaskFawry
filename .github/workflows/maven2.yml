@@ -63,7 +63,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.6.2
       with:
-        path: target/SpringTaskFawry-0.0.1-SNAPSHOT.jar.original
+        path: target/*.jar
     # The desired behavior if no files are found using the provided path.
 
           
